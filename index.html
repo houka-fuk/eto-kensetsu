@@ -3,215 +3,295 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="株式会社エトウ — 建築工事・土木工事・リフォーム・設計監理。福岡県大川市に根ざした誠実な建設で、確かな技術と安心をお届けします。">
+  <meta name="description" content="株式会社エトウ — 建築工事・土木工事・リフォーム・設計監理。福岡県大川市に根ざした確かな技術と誠実な建設。">
   <title>株式会社エトウ | 確かな技術で未来を建てる</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 <body>
 
+  <div id="overlay" class="overlay" aria-hidden="true"></div>
+
+  <nav id="mobileMenu" class="mobile-menu" aria-label="モバイルナビゲーション">
+    <a href="#about" class="mobile-link">会社について</a>
+    <a href="#services" class="mobile-link">事業内容</a>
+    <a href="#company" class="mobile-link">会社概要</a>
+    <a href="#news" class="mobile-link">お知らせ</a>
+    <a href="#contact" class="mobile-cta">お問い合わせ</a>
+  </nav>
+
   <!-- ========== HEADER ========== -->
   <header id="header">
-    <nav class="nav-container" role="navigation" aria-label="メインナビゲーション">
+    <div class="header-inner">
       <a href="#" class="logo" aria-label="株式会社エトウ トップへ">
-        <span class="logo-mark" aria-hidden="true">E</span>
-        <span class="logo-text">株式会社エトウ</span>
+        <img src="images/logo.png" alt="株式会社エトウ" class="logo-img" width="330" height="190">
       </a>
-      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav-links">
+      <nav class="desktop-nav" aria-label="メインナビゲーション">
+        <a href="#about" class="nav-lnk">会社について</a>
+        <a href="#services" class="nav-lnk">事業内容</a>
+        <a href="#company" class="nav-lnk">会社概要</a>
+        <a href="#news" class="nav-lnk">お知らせ</a>
+        <a href="#contact" class="nav-cta">お問い合わせ</a>
+      </nav>
+      <button id="hamburger" class="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileMenu">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <ul class="nav-links" id="nav-links" role="list">
-        <li><a href="#about">会社について</a></li>
-        <li><a href="#services">事業内容</a></li>
-        <li><a href="#company">会社概要</a></li>
-        <li><a href="#news">お知らせ</a></li>
-        <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
-      </ul>
-    </nav>
+    </div>
   </header>
 
-  <!-- ========== HERO ========== -->
-  <section id="hero" aria-label="メインビジュアル">
-    <div class="hero-content">
-      <p class="hero-label">TRUSTED CONSTRUCTION SINCE 1985</p>
-      <h1>確かな技術で、<br>未来を建てる。</h1>
-      <p class="hero-sub">地域に根ざし、誠実に。<br>一棟一棟に想いを込めて。</p>
-      <div class="hero-btns">
-        <a href="#services" class="btn btn-primary">事業内容を見る</a>
-        <a href="#contact" class="btn btn-outline">お問い合わせ</a>
-      </div>
-    </div>
-    <div class="hero-deco" aria-hidden="true">
-      <div class="hero-scroll">
-        <span>SCROLL</span>
-        <div class="scroll-line"></div>
-      </div>
-    </div>
-  </section>
+  <main>
 
-  <!-- ========== ABOUT ========== -->
-  <section id="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">ABOUT US</span>
-        <h2>会社について</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-text">
-          <h3>地域と共に歩む、<br>誠実な建設を。</h3>
-          <p>私たちETO建設は、創業以来「誠実・品質・安全」を経営理念として、地域の皆様に信頼される建設会社を目指してまいりました。</p>
-          <p>住宅から商業施設、公共インフラまで、幅広い実績と経験を持つ専門スタッフが、お客様の想いを形にします。</p>
-          <p>「建てて終わり」ではなく、長期にわたるアフターサービスで建物の価値を守り続けることが私たちの使命です。</p>
-          <div class="about-stats">
-            <div class="stat">
-              <span class="stat-num">40<small>年</small></span>
-              <span class="stat-label">創業からの歴史</span>
+    <!-- ========== HERO ========== -->
+    <section id="hero" aria-label="メインビジュアル">
+      <div class="hero-stripe hero-stripe--wide" aria-hidden="true"></div>
+      <div class="hero-stripe hero-stripe--thin" aria-hidden="true"></div>
+      <div class="hero-ghost" aria-hidden="true">1920</div>
+
+      <div class="hero-body">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <div class="hero-badge">
+              <span class="hero-badge-dot" aria-hidden="true"></span>
+              <span class="hero-badge-text">TRUSTED CONSTRUCTION SINCE 1920</span>
             </div>
-            <div class="stat">
-              <span class="stat-num">500<small>件+</small></span>
-              <span class="stat-label">施工実績</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">98<small>%</small></span>
-              <span class="stat-label">顧客満足度</span>
+            <h1 class="hero-h1">確かな技術で、<br>未来を建てる。</h1>
+            <div class="hero-goldline" aria-hidden="true"></div>
+            <p class="hero-sub">地域に根ざし、誠実に。<br>一棟一棟に想いを込めて。</p>
+            <div class="hero-btns">
+              <a href="#services" class="btn btn-primary">
+                事業内容を見る
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M2.5 6.5H10.5M7 3L10.5 6.5L7 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#contact" class="btn btn-outline">お問い合わせ</a>
             </div>
           </div>
-        </div>
-        <div class="about-visual" aria-hidden="true">
-          <div class="visual-block v1"></div>
-          <div class="visual-block v2"></div>
-          <div class="visual-block v3"></div>
-          <div class="visual-badge">信頼と実績</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== SERVICES ========== -->
-  <section id="services" class="bg-light">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">SERVICES</span>
-        <h2>事業内容</h2>
-      </div>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 40V20L24 8L40 20V40H28V28H20V40H8Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
-            </svg>
+          <div class="hero-visual">
+            <picture>
+              <source srcset="images/company-main.webp" type="image/webp">
+              <img src="images/company-main.jpg" alt="株式会社エトウ 本社屋外観" width="1600" height="1067" loading="eager" fetchpriority="high">
+            </picture>
           </div>
-          <h3>建築工事</h3>
-          <p>住宅・マンション・商業施設・オフィスビルなど、あらゆる建築物の新築工事を手がけます。設計から施工まで一貫してご対応いたします。</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 38H42M10 38V26H18V38M22 38V16H30V38M34 38V22H42V38" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M6 22L24 8L42 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h3>土木工事</h3>
-          <p>道路・橋梁・上下水道・河川整備など、社会インフラの整備に貢献します。安全で確実な施工を第一に取り組んでいます。</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 34H38M14 34V22H22V34M26 34V14H34V34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M6 10L24 6L42 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M36 18L40 14M36 22L42 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3>リフォーム・改修工事</h3>
-          <p>既存建物の価値を高めるリノベーション・改修工事。耐震補強から内装リフォームまで、建物の長寿命化を支援します。</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="7" y="7" width="14" height="14" rx="1.5" stroke="currentColor" stroke-width="2.5"/>
-              <rect x="27" y="7" width="14" height="14" rx="1.5" stroke="currentColor" stroke-width="2.5"/>
-              <rect x="7" y="27" width="14" height="14" rx="1.5" stroke="currentColor" stroke-width="2.5"/>
-              <rect x="27" y="27" width="14" height="14" rx="1.5" stroke="currentColor" stroke-width="2.5"/>
-            </svg>
-          </div>
-          <h3>設計・監理</h3>
-          <p>お客様のニーズに合わせた設計プランの提案から、工事監理まで。品質と安全を確保しながら、理想の空間づくりをサポートします。</p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ========== COMPANY INFO ========== -->
-  <section id="company">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">COMPANY INFO</span>
-        <h2>会社概要</h2>
+      <div id="heroStats" class="hero-stats">
+        <div class="hero-statbar">
+          <div class="hero-stat hero-stat--first">
+            <div class="hero-stat-label">FOUNDED</div>
+            <div class="hero-stat-value">
+              <span id="cntYear" class="hero-stat-num">1920</span>
+              <small class="hero-stat-unit">年</small>
+            </div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-label">PROJECTS</div>
+            <div class="hero-stat-value">
+              <span id="cntProj" class="hero-stat-num">0</span>
+              <small class="hero-stat-unit">件+</small>
+            </div>
+          </div>
+          <div class="hero-stat hero-stat--last">
+            <div class="hero-stat-label">ANNUAL REVENUE</div>
+            <div class="hero-stat-value">
+              <span id="cntRev" class="hero-stat-num">0</span>
+              <small class="hero-stat-unit">億円</small>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="company-wrapper">
-        <table class="company-table">
-          <tbody>
-            <tr>
-              <th scope="row">会社名</th>
-              <td>株式会社 エトウ</td>
-            </tr>
-            <tr>
-              <th scope="row">創業</th>
-              <td>大正9年 4月（1920年）</td>
-            </tr>
-            <tr>
-              <th scope="row">代表取締役</th>
-              <td>山﨑 彩</td>
-            </tr>
-            <tr>
-              <th scope="row">資本金</th>
-              <td>5,139万円</td>
-            </tr>
-            <tr>
-              <th scope="row">グループ年商</th>
-              <td>80億円（2025年5月期）</td>
-            </tr>
-            <tr>
-              <th scope="row">所在地</th>
-              <td>〒831-0008<br>福岡県大川市大字鐘ヶ江 227-2</td>
-            </tr>
-            <tr>
-              <th scope="row">TEL / FAX</th>
-              <td>TEL : 0944-87-5888 / FAX : 0944-87-1018</td>
-            </tr>
-            <tr>
-              <th scope="row">建設業許可</th>
-              <td>福岡県知事 許可（特-8）第 118488 号</td>
-            </tr>
-            <tr>
-              <th scope="row">事業内容</th>
-              <td>建築工事業、土木工事業、リフォーム・改修工事、設計・監理</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
 
-  <!-- ========== NEWS ========== -->
-  <section id="news" class="bg-light">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">NEWS</span>
-        <h2>お知らせ</h2>
+      <div class="hero-scroll" aria-hidden="true">
+        <span class="hero-scroll-text">SCROLL</span>
+        <div class="hero-scroll-line"></div>
       </div>
-      <div class="news-grid news-grid--single">
+    </section>
 
-        <!-- X (Twitter) タイムライン -->
-        <div class="twitter-feed">
+    <!-- ========== ABOUT ========== -->
+    <section id="about">
+      <div class="about-ghost" aria-hidden="true">ETO</div>
+      <div class="about-corner" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="section-header js-fade">
+          <div class="section-label">
+            <span class="section-label-line" aria-hidden="true"></span>
+            <span class="section-label-text">ABOUT US</span>
+          </div>
+          <h2>地域と共に歩む、<br>誠実な建設を。</h2>
+        </div>
+        <div class="about-grid">
+          <div class="js-fade">
+            <p class="about-para">私たちETO建設は、創業以来「誠実・品質・安全」を経営理念として、地域の皆様に信頼される建設会社を目指してまいりました。</p>
+            <p class="about-para">住宅から商業施設、公共インフラまで、幅広い実績と経験を持つ専門スタッフが、お客様の想いを形にします。</p>
+            <p class="about-para about-para--last">「建てて終わり」ではなく、長期にわたるアフターサービスで建物の価値を守り続けることが私たちの使命です。</p>
+            <div class="about-quote">
+              <p class="about-quote-text">「誠実・品質・安全」を経営理念として、<br>地域に根ざした建設を続けています。</p>
+              <p class="about-quote-sign">— 代表取締役　山﨑 彩</p>
+            </div>
+          </div>
+          <div class="js-fade">
+            <div class="about-stat">
+              <p class="about-stat-label">FOUNDED</p>
+              <div class="about-stat-value">
+                <span class="about-stat-num">1920</span>
+              </div>
+              <p class="about-stat-note">大正9年 4月 創業</p>
+            </div>
+            <div class="about-stat">
+              <p class="about-stat-label">PROJECTS</p>
+              <div class="about-stat-value">
+                <span class="about-stat-num">500</span>
+                <span class="about-stat-unit">件+</span>
+              </div>
+              <p class="about-stat-note">累計施工実績</p>
+            </div>
+            <div class="about-stat about-stat--last">
+              <p class="about-stat-label">SATISFACTION</p>
+              <div class="about-stat-value">
+                <span class="about-stat-num">98</span>
+                <span class="about-stat-unit">%</span>
+              </div>
+              <p class="about-stat-note">顧客満足度</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header js-fade">
+          <div class="section-label">
+            <span class="section-label-line" aria-hidden="true"></span>
+            <span class="section-label-text">SERVICES</span>
+          </div>
+          <h2 class="on-dark">事業内容</h2>
+        </div>
+
+        <div class="svc-row js-fade">
+          <span class="svc-num">01</span>
+          <div class="svc-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 48 48" fill="none" stroke="rgba(200,149,26,0.8)" stroke-width="2.5" stroke-linejoin="round"><path d="M8 40V20L24 8L40 20V40H28V28H20V40H8Z"/></svg>
+          </div>
+          <div class="svc-text">
+            <h3>建築工事</h3>
+            <p class="svc-desc">住宅・マンション・商業施設・オフィスビルなど、あらゆる建築物の新築工事。設計から施工まで一貫してご対応いたします。</p>
+          </div>
+          <svg class="svc-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3.5 9H14.5M10 4.5L14.5 9L10 13.5" stroke="#c8951a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+
+        <div class="svc-row js-fade" data-delay="100">
+          <span class="svc-num">02</span>
+          <div class="svc-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 48 48" fill="none" stroke="rgba(200,149,26,0.8)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 38H42M10 38V26H18V38M22 38V16H30V38M34 38V22H42V38"/><path d="M6 22L24 8L42 22"/></svg>
+          </div>
+          <div class="svc-text">
+            <h3>土木工事</h3>
+            <p class="svc-desc">道路・橋梁・上下水道・河川整備など、社会インフラの整備に貢献します。安全で確実な施工を第一に取り組んでいます。</p>
+          </div>
+          <svg class="svc-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3.5 9H14.5M10 4.5L14.5 9L10 13.5" stroke="#c8951a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+
+        <div class="svc-row js-fade" data-delay="200">
+          <span class="svc-num">03</span>
+          <div class="svc-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 48 48" fill="none" stroke="rgba(200,149,26,0.8)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 34H38M14 34V22H22V34M26 34V14H34V34"/><path d="M6 10L24 6L42 10"/></svg>
+          </div>
+          <div class="svc-text">
+            <h3>リフォーム・改修工事</h3>
+            <p class="svc-desc">既存建物の価値を高めるリノベーション・改修工事。耐震補強から内装リフォームまで、建物の長寿命化を支援します。</p>
+          </div>
+          <svg class="svc-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3.5 9H14.5M10 4.5L14.5 9L10 13.5" stroke="#c8951a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+
+        <div class="svc-row svc-row--last js-fade" data-delay="300">
+          <span class="svc-num">04</span>
+          <div class="svc-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 48 48" fill="none" stroke="rgba(200,149,26,0.8)" stroke-width="2.5"><rect x="7" y="7" width="14" height="14" rx="1.5"/><rect x="27" y="7" width="14" height="14" rx="1.5"/><rect x="7" y="27" width="14" height="14" rx="1.5"/><rect x="27" y="27" width="14" height="14" rx="1.5"/></svg>
+          </div>
+          <div class="svc-text">
+            <h3>設計・監理</h3>
+            <p class="svc-desc">お客様のニーズに合わせた設計プランの提案から工事監理まで。品質と安全を確保しながら、理想の空間づくりをサポートします。</p>
+          </div>
+          <svg class="svc-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3.5 9H14.5M10 4.5L14.5 9L10 13.5" stroke="#c8951a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== COMPANY ========== -->
+    <section id="company">
+      <div class="container">
+        <div class="section-header section-header--table js-fade">
+          <div class="section-label">
+            <span class="section-label-line" aria-hidden="true"></span>
+            <span class="section-label-text">COMPANY INFO</span>
+          </div>
+          <h2>会社概要</h2>
+        </div>
+        <div class="company-wrapper js-fade">
+          <table class="company-table">
+            <tbody>
+              <tr>
+                <th scope="row">会社名</th>
+                <td>株式会社 エトウ</td>
+              </tr>
+              <tr>
+                <th scope="row">創業</th>
+                <td>大正9年 4月（1920年）</td>
+              </tr>
+              <tr>
+                <th scope="row">代表取締役</th>
+                <td>山﨑 彩</td>
+              </tr>
+              <tr>
+                <th scope="row">資本金</th>
+                <td>5,139万円</td>
+              </tr>
+              <tr>
+                <th scope="row">グループ年商</th>
+                <td>80億円（2025年5月期）</td>
+              </tr>
+              <tr>
+                <th scope="row">所在地</th>
+                <td>〒831-0008<br>福岡県大川市大字鐘ヶ江 227-2</td>
+              </tr>
+              <tr>
+                <th scope="row">TEL / FAX</th>
+                <td>TEL : 0944-87-5888 / FAX : 0944-87-1018</td>
+              </tr>
+              <tr>
+                <th scope="row">建設業許可</th>
+                <td>福岡県知事 許可（特-8）第 118488 号</td>
+              </tr>
+              <tr>
+                <th scope="row">事業内容</th>
+                <td>建築工事業、土木工事業、リフォーム・改修工事、設計・監理</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== NEWS ========== -->
+    <section id="news">
+      <div class="container">
+        <div class="section-header section-header--table js-fade">
+          <div class="section-label">
+            <span class="section-label-line" aria-hidden="true"></span>
+            <span class="section-label-text">NEWS</span>
+          </div>
+          <h2>お知らせ</h2>
+        </div>
+        <div class="twitter-feed js-fade">
           <div class="twitter-header">
-            <svg class="x-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-            </svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="rgba(15,21,32,0.5)" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
             <span>X (Twitter) 最新情報</span>
           </div>
           <div class="twitter-embed">
@@ -227,104 +307,85 @@
                href="https://twitter.com/YOUR_TWITTER_USERNAME">
               Tweets by YOUR_TWITTER_USERNAME
             </a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== CONTACT ========== -->
-  <section id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">CONTACT</span>
-        <h2>お問い合わせ</h2>
-        <p class="section-desc">お見積もり・ご質問など、お気軽にご連絡ください。</p>
-      </div>
-      <div class="contact-wrapper">
+    <!-- ========== CONTACT ========== -->
+    <section id="contact">
+      <div class="contact-stripe" aria-hidden="true"></div>
 
-        <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M3 5C3 3.9 3.9 3 5 3H8.3L10.1 7.5L8 9.6C9.1 11.8 12.2 14.9 14.4 16L16.5 13.9L21 15.7V19C21 20.1 20.1 21 19 21C10.2 21 3 13.8 3 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <div>
-              <span class="contact-label">お電話</span>
-              <a href="tel:0944875888" class="contact-value">0944-87-5888</a>
-              <span class="contact-note">受付時間 平日 8:00〜17:00</span>
-            </div>
+      <div class="container">
+        <div class="section-header section-header--contact js-fade">
+          <div class="section-label">
+            <span class="section-label-line" aria-hidden="true"></span>
+            <span class="section-label-text">CONTACT</span>
           </div>
-          <div class="contact-item">
-            <div class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M3 8L12 13L21 8M5 19H19C20.1 19 21 18.1 21 17V7C21 5.9 20.1 5 19 5H5C3.9 5 3 5.9 3 7V17C3 18.1 3.9 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <div>
-              <span class="contact-label">メールアドレス</span>
-              <a href="mailto:info@eto-kensetsu.co.jp" class="contact-value">info@eto-kensetsu.co.jp</a>
-              <span class="contact-note">24時間受付（返信は翌営業日）</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" stroke="currentColor" stroke-width="2" fill="none"/>
-              </svg>
-            </div>
-            <div>
-              <span class="contact-label">所在地</span>
-              <span class="contact-value">〒831-0008</span>
-              <span class="contact-note">福岡県大川市大字鐘ヶ江 227-2</span>
-            </div>
-          </div>
+          <h2 class="on-dark">お問い合わせ</h2>
+          <p class="section-desc">お見積もり・ご質問など、お気軽にご連絡ください。</p>
         </div>
+        <div class="contact-grid">
+          <div class="contact-info js-fade">
+            <div>
+              <p class="contact-label">PHONE</p>
+              <a href="tel:0944875888" class="contact-phone">0944-87-5888</a>
+              <p class="contact-note">平日 8:00〜17:00</p>
+            </div>
+            <div class="contact-divider" aria-hidden="true"></div>
+            <div>
+              <p class="contact-label">EMAIL</p>
+              <a href="mailto:info@eto-kensetsu.co.jp" class="contact-email">info@eto-kensetsu.co.jp</a>
+              <p class="contact-note">24時間受付（返信は翌営業日）</p>
+            </div>
+            <div class="contact-divider" aria-hidden="true"></div>
+            <div>
+              <p class="contact-label">ADDRESS</p>
+              <p class="contact-address">〒831-0008<br>福岡県大川市大字鐘ヶ江 227-2</p>
+            </div>
+          </div>
 
-        <form class="contact-form" id="contactForm" novalidate>
-          <div class="form-group">
-            <label for="name">お名前 <span class="required">必須</span></label>
-            <input type="text" id="name" name="name" placeholder="山田 太郎" required autocomplete="name">
-          </div>
-          <div class="form-group">
-            <label for="company-name">会社名</label>
-            <input type="text" id="company-name" name="company" placeholder="〇〇株式会社" autocomplete="organization">
-          </div>
-          <div class="form-group">
-            <label for="email">メールアドレス <span class="required">必須</span></label>
-            <input type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="email">
-          </div>
-          <div class="form-group">
-            <label for="tel">電話番号</label>
-            <input type="tel" id="tel" name="tel" placeholder="03-0000-0000" autocomplete="tel">
-          </div>
-          <div class="form-group form-full">
-            <label for="subject">件名 <span class="required">必須</span></label>
-            <input type="text" id="subject" name="subject" placeholder="お問い合わせの件名" required>
-          </div>
-          <div class="form-group form-full">
-            <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
-            <textarea id="message" name="message" rows="6" placeholder="ご質問・ご要望などをご入力ください" required></textarea>
-          </div>
-          <div class="form-group form-full">
-            <button type="submit" class="btn btn-primary btn-full">送信する</button>
-          </div>
-        </form>
-
+          <form id="contactForm" class="contact-form js-fade" novalidate>
+            <div class="form-group">
+              <label for="name">お名前<span class="required">必須</span></label>
+              <input class="eto-input" type="text" id="name" name="name" placeholder="山田 太郎" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="company-name">会社名</label>
+              <input class="eto-input" type="text" id="company-name" name="company" placeholder="〇〇株式会社" autocomplete="organization">
+            </div>
+            <div class="form-group">
+              <label for="email">メールアドレス<span class="required">必須</span></label>
+              <input class="eto-input" type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="tel">電話番号</label>
+              <input class="eto-input" type="tel" id="tel" name="tel" placeholder="03-0000-0000" autocomplete="tel">
+            </div>
+            <div class="form-group form-full">
+              <label for="subject">件名<span class="required">必須</span></label>
+              <input class="eto-input" type="text" id="subject" name="subject" placeholder="お問い合わせの件名" required>
+            </div>
+            <div class="form-group form-full">
+              <label for="message">お問い合わせ内容<span class="required">必須</span></label>
+              <textarea class="eto-input" id="message" name="message" rows="5" placeholder="ご質問・ご要望などをご入力ください" required></textarea>
+            </div>
+            <div class="form-full">
+              <button type="submit" class="submit-btn">送 信 す る</button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+  </main>
 
   <!-- ========== FOOTER ========== -->
-  <footer id="footer">
-    <div class="footer-inner">
+  <footer>
+    <div class="container">
       <div class="footer-top">
         <a href="#" class="footer-logo" aria-label="株式会社エトウ トップへ">
-          <span class="logo-mark" aria-hidden="true">E</span>
-          <span>株式会社エトウ</span>
+          <img src="images/logo.png" alt="株式会社エトウ" class="footer-logo-img" width="330" height="190">
         </a>
         <nav class="footer-nav" aria-label="フッターナビゲーション">
           <a href="#about">会社について</a>
@@ -335,12 +396,15 @@
         </nav>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 株式会社エトウ All Rights Reserved.</p>
+        <p class="footer-copy">&copy; 2025 株式会社エトウ All Rights Reserved.</p>
+        <p class="footer-license">福岡県知事 許可（特-8）第 118488 号</p>
       </div>
     </div>
   </footer>
 
-  <a href="#" class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">&#8679;</a>
+  <button id="backToTop" class="back-to-top" aria-label="ページトップへ">
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M7.5 11.5V3.5M3.5 7.5L7.5 3.5L11.5 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
 
   <script src="js/main.js"></script>
 </body>
