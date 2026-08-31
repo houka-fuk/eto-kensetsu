@@ -9,17 +9,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 <body>
 
   <div id="overlay" class="overlay" aria-hidden="true"></div>
 
   <nav id="mobileMenu" class="mobile-menu" aria-label="モバイルナビゲーション">
-    <a href="#about" class="mobile-link">会社について</a>
     <a href="#services" class="mobile-link">事業内容</a>
     <a href="#company" class="mobile-link">会社概要</a>
     <a href="#news" class="mobile-link">お知らせ</a>
+    <a href="https://eto-web.com/" class="mobile-link">本体サイトへ</a>
     <a href="#contact" class="mobile-cta">お問い合わせ</a>
   </nav>
 
@@ -30,10 +29,10 @@
         <img src="images/logo.png" alt="株式会社エトウ" class="logo-img" width="330" height="190">
       </a>
       <nav class="desktop-nav" aria-label="メインナビゲーション">
-        <a href="#about" class="nav-lnk">会社について</a>
         <a href="#services" class="nav-lnk">事業内容</a>
         <a href="#company" class="nav-lnk">会社概要</a>
         <a href="#news" class="nav-lnk">お知らせ</a>
+        <a href="https://eto-web.com/" class="nav-lnk">本体サイトへ</a>
         <a href="#contact" class="nav-cta">お問い合わせ</a>
       </nav>
       <button id="hamburger" class="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileMenu">
@@ -79,32 +78,6 @@
         </div>
       </div>
 
-      <div id="heroStats" class="hero-stats">
-        <div class="hero-statbar">
-          <div class="hero-stat hero-stat--first">
-            <div class="hero-stat-label">FOUNDED</div>
-            <div class="hero-stat-value">
-              <span id="cntYear" class="hero-stat-num">1920</span>
-              <small class="hero-stat-unit">年</small>
-            </div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-label">PROJECTS</div>
-            <div class="hero-stat-value">
-              <span id="cntProj" class="hero-stat-num">0</span>
-              <small class="hero-stat-unit">件+</small>
-            </div>
-          </div>
-          <div class="hero-stat hero-stat--last">
-            <div class="hero-stat-label">ANNUAL REVENUE</div>
-            <div class="hero-stat-value">
-              <span id="cntRev" class="hero-stat-num">0</span>
-              <small class="hero-stat-unit">億円</small>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="hero-scroll" aria-hidden="true">
         <span class="hero-scroll-text">SCROLL</span>
         <div class="hero-scroll-line"></div>
@@ -124,41 +97,10 @@
           </div>
           <h2>地域と共に歩む、<br>誠実な建設を。</h2>
         </div>
-        <div class="about-grid">
-          <div class="js-fade">
-            <p class="about-para">私たちETO建設は、創業以来「誠実・品質・安全」を経営理念として、地域の皆様に信頼される建設会社を目指してまいりました。</p>
-            <p class="about-para">住宅から店舗・オフィス、工場・倉庫まで、幅広い実績と経験を持つ専門スタッフが、お客様の想いを形にします。</p>
-            <p class="about-para about-para--last">「建てて終わり」ではなく、長期にわたるアフターサービスで建物の価値を守り続けることが私たちの使命です。</p>
-            <div class="about-quote">
-              <p class="about-quote-text">「誠実・品質・安全」を経営理念として、<br>地域に根ざした建設を続けています。</p>
-              <p class="about-quote-sign">— 代表取締役　山﨑 彩</p>
-            </div>
-          </div>
-          <div class="js-fade">
-            <div class="about-stat">
-              <p class="about-stat-label">FOUNDED</p>
-              <div class="about-stat-value">
-                <span class="about-stat-num">1920</span>
-              </div>
-              <p class="about-stat-note">大正9年 4月 創業</p>
-            </div>
-            <div class="about-stat">
-              <p class="about-stat-label">PROJECTS</p>
-              <div class="about-stat-value">
-                <span class="about-stat-num">500</span>
-                <span class="about-stat-unit">件+</span>
-              </div>
-              <p class="about-stat-note">累計施工実績</p>
-            </div>
-            <div class="about-stat about-stat--last">
-              <p class="about-stat-label">SATISFACTION</p>
-              <div class="about-stat-value">
-                <span class="about-stat-num">98</span>
-                <span class="about-stat-unit">%</span>
-              </div>
-              <p class="about-stat-note">顧客満足度</p>
-            </div>
-          </div>
+        <div class="about-content js-fade">
+          <p class="about-para">私たちETO建設は、「誠実・品質・安全」を経営理念として、地域の皆様に信頼される建設会社を目指してまいりました。</p>
+          <p class="about-para">住宅から店舗・オフィス、工場・倉庫まで、幅広い実績と経験を持つ専門スタッフが、お客様の想いを形にします。</p>
+          <p class="about-para about-para--last">「建てて終わり」ではなく、長期にわたるアフターサービスで建物の価値を守り続けることが私たちの使命です。</p>
         </div>
       </div>
     </section>
@@ -329,26 +271,12 @@
           </div>
           <h2>お知らせ</h2>
         </div>
-        <div class="twitter-feed js-fade">
-          <div class="twitter-header">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="rgba(15,21,32,0.5)" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            <span>X (Twitter) 最新情報</span>
-          </div>
-          <div class="twitter-embed">
-            <!--
-              ★ Twitter/X タイムライン埋め込み設定
-              「YOUR_TWITTER_USERNAME」の部分を X(Twitter) のユーザー名に変更してください。
-              例: href="https://twitter.com/eto_kensetsu"
-            -->
-            <a class="twitter-timeline"
-               data-height="560"
-               data-theme="light"
-               data-chrome="noheader nofooter noborders transparent"
-               href="https://twitter.com/YOUR_TWITTER_USERNAME">
-              Tweets by YOUR_TWITTER_USERNAME
-            </a>
-          </div>
-        </div>
+        <ul class="news-list js-fade">
+          <li class="news-item">
+            <time class="news-date">2026.07.17</time>
+            <p class="news-title">建設事業のホームページを公開しました。</p>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -428,10 +356,10 @@
           <img src="images/logo.png" alt="株式会社エトウ" class="footer-logo-img" width="330" height="190">
         </a>
         <nav class="footer-nav" aria-label="フッターナビゲーション">
-          <a href="#about">会社について</a>
           <a href="#services">事業内容</a>
           <a href="#company">会社概要</a>
           <a href="#news">お知らせ</a>
+          <a href="https://eto-web.com/">本体サイトへ</a>
           <a href="#contact">お問い合わせ</a>
         </nav>
       </div>

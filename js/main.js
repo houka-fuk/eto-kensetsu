@@ -64,38 +64,6 @@
     document.querySelectorAll('.js-fade').forEach(function (el) { el.classList.add('is-visible'); });
   }
 
-  // ===== スタッツカウントアップ =====
-  function animCount(id, from, to, dur) {
-    const el = document.getElementById(id);
-    if (!el) return;
-    if (reducedMotion) { el.textContent = to; return; }
-    const t0 = performance.now();
-    function step(now) {
-      const t = Math.min((now - t0) / dur, 1);
-      const ease = 1 - Math.pow(1 - t, 3);
-      el.textContent = Math.round(from + (to - from) * ease);
-      if (t < 1) requestAnimationFrame(step);
-    }
-    requestAnimationFrame(step);
-  }
-
-  const stats = document.getElementById('heroStats');
-  if (stats && 'IntersectionObserver' in window) {
-    const countObs = new IntersectionObserver(function (entries) {
-      if (entries[0].isIntersecting) {
-        animCount('cntYear', 1820, 1920, 1600);
-        animCount('cntProj', 0, 500, 2000);
-        animCount('cntRev', 0, 80, 1800);
-        countObs.disconnect();
-      }
-    }, { threshold: 0.5 });
-    countObs.observe(stats);
-  } else {
-    animCount('cntYear', 1920, 1920, 0);
-    animCount('cntProj', 500, 500, 0);
-    animCount('cntRev', 80, 80, 0);
-  }
-
   // ===== スムーズスクロール（ヘッダー高さオフセット） =====
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {
     a.addEventListener('click', function (e) {

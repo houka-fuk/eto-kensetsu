@@ -4,7 +4,7 @@
     {
       "name": "eto-web",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8931", "--directory", "/Users/utsuno/eto-web(建築）"],
+      "runtimeArgs": ["-m", "http.server", "8931", "--directory", "/Volumes/Projects/dev/web/eto-architecture"],
       "port": 8931
     }
   ]

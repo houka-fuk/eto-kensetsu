@@ -428,52 +428,6 @@ section { position: relative; }
   color: var(--dark);
 }
 
-/* Hero stats bar */
-.hero-stats {
-  position: relative;
-  z-index: 1;
-  background: var(--dark);
-  animation: eto-fade 0.8s 0.72s both;
-}
-.hero-statbar {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 3rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.hero-stat {
-  padding: 1.6rem 2rem;
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
-}
-.hero-stat--first { padding: 1.6rem 2rem 1.6rem 0; }
-.hero-stat--last { border-right: none; }
-
-.hero-stat-label {
-  font-size: 0.58rem;
-  letter-spacing: 0.22em;
-  color: rgba(200, 149, 26, 0.7);
-  margin-bottom: 0.4rem;
-  font-weight: 500;
-}
-.hero-stat-value {
-  display: flex;
-  align-items: baseline;
-  gap: 0.3rem;
-}
-.hero-stat-num {
-  font-family: var(--serif);
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--white-text);
-  line-height: 1;
-}
-.hero-stat-unit {
-  font-size: 0.82rem;
-  font-weight: 300;
-  color: rgba(240, 237, 230, 0.45);
-}
-
 /* Scroll indicator */
 .hero-scroll {
   position: absolute;
@@ -533,11 +487,8 @@ section { position: relative; }
   opacity: 0.12;
 }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6rem;
-  align-items: start;
+.about-content {
+  max-width: 640px;
 }
 
 .about-para {
@@ -547,70 +498,7 @@ section { position: relative; }
   margin-bottom: 1.5rem;
   font-weight: 300;
 }
-.about-para--last { margin-bottom: 2.5rem; }
-
-.about-quote {
-  padding: 1.75rem;
-  border-left: 3px solid var(--gold);
-  background: rgba(200, 149, 26, 0.04);
-}
-.about-quote-text {
-  font-family: var(--serif);
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--dark);
-  line-height: 2;
-  letter-spacing: 0.02em;
-}
-.about-quote-sign {
-  margin-top: 1rem;
-  font-size: 0.75rem;
-  color: var(--gold);
-  letter-spacing: 0.1em;
-  font-weight: 500;
-}
-
-.about-stat {
-  padding-bottom: 2.5rem;
-  border-bottom: 1px solid rgba(15, 21, 32, 0.1);
-  margin-bottom: 2.5rem;
-}
-.about-stat--last {
-  padding-bottom: 0;
-  border-bottom: none;
-  margin-bottom: 0;
-}
-.about-stat-label {
-  font-size: 0.58rem;
-  letter-spacing: 0.22em;
-  color: var(--gold);
-  margin-bottom: 0.75rem;
-  font-weight: 600;
-}
-.about-stat-value {
-  display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
-}
-.about-stat-num {
-  font-family: var(--serif);
-  font-size: 4.5rem;
-  font-weight: 900;
-  color: var(--dark);
-  line-height: 1;
-}
-.about-stat-unit {
-  font-family: var(--serif);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-muted);
-}
-.about-stat-note {
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  margin-top: 0.4rem;
-  letter-spacing: 0.05em;
-}
+.about-para--last { margin-bottom: 0; }
 
 /* ---------- Services ---------- */
 #services {
@@ -718,24 +606,29 @@ section { position: relative; }
   padding: 8rem 0;
 }
 
-.twitter-feed {
+.news-list {
   max-width: 660px;
-  border: 1px solid rgba(15, 21, 32, 0.1);
-  background: #faf9f5;
+  border-top: 1px solid rgba(15, 21, 32, 0.1);
 }
-.twitter-header {
+.news-item {
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 1rem 1.5rem;
-  border-bottom: 1px solid var(--border-light);
+  align-items: baseline;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(15, 21, 32, 0.1);
 }
-.twitter-header span {
+.news-date {
+  flex-shrink: 0;
+  font-family: var(--serif);
   font-size: 0.82rem;
-  font-weight: 500;
-  color: rgba(15, 21, 32, 0.6);
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
 }
-.twitter-embed { min-height: 460px; }
+.news-title {
+  font-size: 0.9rem;
+  color: var(--dark);
+  font-weight: 400;
+}
 
 /* ---------- Contact ---------- */
 #contact {
@@ -976,10 +869,8 @@ footer {
   .desktop-nav { display: none; }
   .hamburger { display: flex; }
   .hero-h1 { font-size: 2.5rem; }
-  .about-grid { grid-template-columns: 1fr; gap: 3rem; }
   .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
   .svc-desc { display: none; }
-  .hero-statbar { grid-template-columns: 1fr 1fr; }
   #hero { min-height: auto; }
   .hero-grid { grid-template-columns: 1fr; padding: 7rem 1.5rem 3rem; gap: 2.5rem; }
   .hero-visual::before { top: -10px; right: -10px; }
