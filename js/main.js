@@ -85,6 +85,21 @@
   // ===== お問い合わせフォーム =====
   const form = document.getElementById('contactForm');
   if (form) {
+    function showFormNotice(text, isError) {
+      const old = document.getElementById('formSuccess');
+      if (old) old.remove();
+      const msg = document.createElement('div');
+      msg.id = 'formSuccess';
+      msg.className = isError ? 'form-success form-success--error' : 'form-success';
+      msg.setAttribute('role', 'status');
+      msg.textContent = text;
+      form.appendChild(msg);
+      setTimeout(function () {
+        const m = document.getElementById('formSuccess');
+        if (m) m.remove();
+      }, 8000);
+    }
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       let valid = true;
@@ -111,19 +126,38 @@
         return;
       }
 
-      const old = document.getElementById('formSuccess');
-      if (old) old.remove();
-      const msg = document.createElement('div');
-      msg.id = 'formSuccess';
-      msg.className = 'form-success';
-      msg.setAttribute('role', 'status');
-      msg.textContent = 'お問い合わせを受け付けました。担当者よりご連絡いたします。';
-      form.appendChild(msg);
-      form.reset();
-      setTimeout(function () {
-        const m = document.getElementById('formSuccess');
-        if (m) m.remove();
-      }, 8000);
+      const submitBtn = form.querySelector('.submit-btn');
+      const formData = new FormData(form);
+      const payload = {};
+      formData.forEach(function (value, key) { payload[key] = value; });
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = '送信中...';
+      }
+
+      fetch('/.netlify/functions/architecture-contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error('send failed');
+          return res.json();
+        })
+        .then(function () {
+          showFormNotice('お問い合わせを受け付けました。担当者よりご連絡いたします。', false);
+          form.reset();
+        })
+        .catch(function () {
+          showFormNotice('送信に失敗しました。恐れ入りますがお電話にてお問い合わせください。', true);
+        })
+        .finally(function () {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = '送 信 す る';
+          }
+        });
     });
 
     // エラー表示は入力し直したらクリア

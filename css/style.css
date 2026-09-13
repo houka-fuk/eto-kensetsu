@@ -768,6 +768,11 @@ textarea.eto-input { resize: vertical; }
   background: var(--gold-light);
   transform: translateY(-1px);
 }
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
 
 .form-success {
   grid-column: 1 / -1;
@@ -776,6 +781,11 @@ textarea.eto-input { resize: vertical; }
   border: 1px solid rgba(45, 122, 45, 0.4);
   color: #7ec87e;
   font-size: 0.875rem;
+}
+.form-success--error {
+  background: rgba(200, 60, 60, 0.1);
+  border-color: rgba(200, 60, 60, 0.4);
+  color: #e08a8a;
 }
 
 /* ---------- Footer ---------- */
